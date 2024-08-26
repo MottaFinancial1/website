@@ -37,10 +37,10 @@ export default function HeroSlider() {
                     help you, your family, clients, or business achieve your
                     financial goals.
                   </p>
-                  <Link href="/contact" className="btn mr-10">
+                  <Link href="/" className="btn mr-10">
                     Get Started Now
                   </Link>
-                  <Link href="/contact" className="btn border-btn">
+                  <Link href="/" className="btn border-btn">
                     Browse All Services
                   </Link>
                 </div>
