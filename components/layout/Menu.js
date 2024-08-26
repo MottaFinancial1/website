@@ -82,7 +82,7 @@ export default function Menu() {
           </ul>
         </li>
         <li>
-          <Link href="/contact">contacts</Link>
+          <Link href="/">contacts</Link>
         </li>
       </ul>
     </>
