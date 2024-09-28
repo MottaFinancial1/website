@@ -92,7 +92,7 @@ export default function Team2() {
             <div className="col-lg-3 col-md-6 col-sm-8">
               <div className="team__item-two shine-animate-item">
                 <div className="team__thumb-two shine-animate">
-                  <img src="/assets/img/team/mark_team.jpg" alt="" />
+                  <img src="/assets/img/team/mark_team.JPG" alt="" />
                 </div>
                 <div className="team__content-two">
                   <h4 className="title">
@@ -129,7 +129,7 @@ export default function Team2() {
             <div className="col-lg-3 col-md-6 col-sm-8">
               <div className="team__item-two shine-animate-item">
                 <div className="team__thumb-two shine-animate">
-                  <img src="/assets/img/team/matt_team.jpg" alt="" />
+                  <img src="/assets/img/team/matt_team.JPG" alt="" />
                 </div>
                 <div className="team__content-two">
                   <h4 className="title">
