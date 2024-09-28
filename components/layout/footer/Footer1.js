@@ -18,9 +18,10 @@ export default function Footer1() {
                     <div className="footer-content">
                       <p>
                         Our role is to be your trusted partner for all of your
-                        tax, accounting, and finance needs
+                        tax, accounting, and finance needs.
                       </p>
                       <div className="footer-social">
+                        <p className="mb-1">Follow Us</p>
                         <ul className="list-wrap">
                           <li>
                             <Link href="/javascript:void(0)">

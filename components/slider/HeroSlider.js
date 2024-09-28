@@ -33,8 +33,8 @@ export default function HeroSlider() {
                     "No need to worry, my accountant handles that."
                   </h2>
                   <p>
-                    Our CPA’s are some of the best in the business, and ready to
-                    help you, your family, clients, or business achieve your
+                    Our CPAs are among the industry's top professionals, ready
+                    to help you, your family, clients, or business achieve your
                     financial goals.
                   </p>
                   <Link href="/" className="btn mr-10">

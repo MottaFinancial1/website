@@ -22,7 +22,7 @@ export default function Team2() {
                 </div>
                 <div className="team__content-two">
                   <h4 className="title">
-                    <Link href="/">Dat Le</Link>
+                    <Link href="/">Dat Le, CPA</Link>
                   </h4>
                   <span>Managing Partner</span>
                   <div className="team__social-two">
@@ -59,7 +59,7 @@ export default function Team2() {
                 </div>
                 <div className="team__content-two">
                   <h4 className="title">
-                    <Link href="/">Nick Raccuia</Link>
+                    <Link href="/">Nick Raccuia, CPA</Link>
                   </h4>
                   <span>Managing Director of Tax</span>
                   <div className="team__social-two">
@@ -96,7 +96,7 @@ export default function Team2() {
                 </div>
                 <div className="team__content-two">
                   <h4 className="title">
-                    <Link href="/">Mark Dwyer</Link>
+                    <Link href="/">Mark Dwyer, CFP®</Link>
                   </h4>
                   <span>Managing Director of Financial Planning</span>
                   <div className="team__social-two">
