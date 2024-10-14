@@ -4098,6 +4098,7 @@ textarea {
   transform: rotateY(180deg);
 }
 .services__item-three {
+  min-width: 400px;
   background: var(--tg-color-white-default);
   padding: 40px 40px;
   border-radius: 15px;

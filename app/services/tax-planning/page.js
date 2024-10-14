@@ -154,37 +154,37 @@ export default function ServicesDetails() {
                           </h4>
                           <ul className="list-wrap">
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/accounting-advisory">
                                 Accounting Advisory{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/business-entity-structuring">
                                 Business Entity Structuring{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/financial-planning">
                                 Financial Planning{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/management-consulting">
                                 Management Consulting{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/financial-statement-analysis">
                                 Financial Statement Analysis{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/tax-planning">
                                 Tax Planning & Preparation{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>

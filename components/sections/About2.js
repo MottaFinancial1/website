@@ -35,7 +35,9 @@ export default function About2() {
                   providing exceptional tax, accounting, and advisory services
                   to individuals, businesses, and non-profit organizations. With
                   a team of experienced professionals, we combine deep expertise
-                  with personalized attention to help our clients
+                  with personalized attention to help our clients achieve their
+                  financial goals and navigate complex financial landscapes with
+                  confidence.
                 </p>
                 <div className="about__content-inner">
                   <div className="about__list-box">
@@ -58,9 +60,9 @@ export default function About2() {
                       </li>
                     </ul>
                   </div>
-                  <div className="about__list-img">
+                  {/* <div className="about__list-img">
                     <img src="/assets/img/images/about_list_img.jpg" alt="" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

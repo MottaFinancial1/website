@@ -5,7 +5,7 @@ export default function Menu() {
     <>
       <ul className="navigation">
         <li className="active">
-          <Link href="#">Home</Link>
+          <Link href="/">Home</Link>
           {/* <ul className="sub-menu">
             <li className="active">
               <Link href="/">Business</Link>
@@ -48,22 +48,34 @@ export default function Menu() {
           <Link href="#">Services</Link>
           <ul className="sub-menu">
             <li>
-              <Link href="/">Tax Planning & Preparation</Link>
+              <Link href="/services/tax-planning">
+                Tax Planning & Preparation
+              </Link>
             </li>
             <li>
-              <Link href="/">Accounting Advisory & Payroll Services</Link>
+              <Link href="/services/accounting-advisory">
+                Accounting Advisory & Payroll Services
+              </Link>
             </li>
             <li>
-              <Link href="/">Business Organization</Link>
+              <Link href="/services/business-entity-structuring">
+                Business Entity Structuring
+              </Link>
             </li>
             <li>
-              <Link href="/">Financial Planning & Advisory</Link>
+              <Link href="/services/financial-planning">
+                Financial Planning & Advisory
+              </Link>
             </li>
             <li>
-              <Link href="/">Management Consulting</Link>
+              <Link href="/services/management-consulting">
+                Management Consulting
+              </Link>
             </li>
             <li>
-              <Link href="/">Financial Statement Preparation & Analysis</Link>
+              <Link href="/services/financial-statement-analysis">
+                Financial Statement Preparation & Analysis
+              </Link>
             </li>
           </ul>
         </li>

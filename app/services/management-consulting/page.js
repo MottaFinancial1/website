@@ -9,7 +9,7 @@ export default function ServicesDetails() {
       <Layout
         headerStyle={5}
         footerStyle={1}
-        breadcrumbTitle="Tax Planning & Preparation"
+        breadcrumbTitle="Management Consulting"
       >
         <div>
           <section className="services__details-area">
@@ -24,7 +24,7 @@ export default function ServicesDetails() {
                       />
                     </div>
                     <div className="services__details-content">
-                      <h2 className="title">Tax Planning & Preparation</h2>
+                      <h2 className="title">Management Consulting</h2>
                       <p>
                         We offer expert tax planning and preparation services to
                         help you navigate complex tax regulations and maximize
@@ -154,37 +154,37 @@ export default function ServicesDetails() {
                           </h4>
                           <ul className="list-wrap">
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/accounting-advisory">
                                 Accounting Advisory{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/business-entity-structuring">
                                 Business Entity Structuring{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/financial-planning">
                                 Financial Planning{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/management-consulting">
                                 Management Consulting{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/financial-statement-analysis">
                                 Financial Statement Analysis{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/tax-planning">
                                 Tax Planning & Preparation{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>

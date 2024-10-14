@@ -9,7 +9,7 @@ export default function ServicesDetails() {
       <Layout
         headerStyle={5}
         footerStyle={1}
-        breadcrumbTitle="Tax Planning & Preparation"
+        breadcrumbTitle="Financial Planning"
       >
         <div>
           <section className="services__details-area">
@@ -17,105 +17,86 @@ export default function ServicesDetails() {
               <div className="services__details-wrap">
                 <div className="row">
                   <div className="col-70 order-0 order-lg-2">
-                    <div className="services__details-thumb">
-                      <img
-                        src="/assets/img/services/services_details01.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="services__details-content">
-                      <h2 className="title">Tax Planning & Preparation</h2>
+                    <div className="services__details-content services__details-content-two">
+                      <h2 className="title">Financial Planning</h2>
                       <p>
-                        We offer expert tax planning and preparation services to
-                        help you navigate complex tax regulations and maximize
-                        your financial benefits. Our experienced team provides
-                        personalized strategies to minimize your tax liability
-                        and ensure compliance with the latest laws. Whether for
-                        individuals or businesses, we take the stress out of tax
-                        season and help you plan for a more secure financial
-                        future.
+                        eed a little help from our friends from time to time.
+                        Although we offer the one-stop convenience of annery
+                        integrated range of legal, financial services under one
+                        roof, there are occasions when our clients areaneed
+                        specia- list advice beyond the scope of our own
+                        expertise. That’s why we’ve developed close working
+                        relationships with a number of strategic partner.
                       </p>
-                      <p>
-                        We offer expert tax planning and preparation services to
-                        help you navigate complex tax regulations and maximize
-                        your financial benefits. Our experienced team provides
-                        personalized strategies to minimize your tax liability
-                        and ensure compliance with the latest laws. Whether for
-                        individuals or businesses, we take the stress out of tax
-                        season and help you plan for a more secure financial
-                        future.
-                      </p>
-                      <div className="services__details-list">
-                        <div className="row">
-                          <div className="col-md-6">
+                      <div className="services__details-thumb">
+                        <img
+                          src="/assets/img/services/services_details04.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="services__details-inner-five">
+                        <div className="row gutter-24 align-items-center">
+                          <div className="col-lg-7">
+                            <div className="services__details-inner-content-three">
+                              <h3 className="title">Financial Planning</h3>
+                              <p>
+                                eed a little help from our friends from time to
+                                time. Although we offer the one-stop convenience
+                                of annery integrated range of legal, financial
+                                services under one roof, there are occasions.eed
+                                a little help from our friends from time to
+                                time. Although we offer the one-stop convenience
+                                of annery integrated range of legal, financial
+                                services under one roof.
+                              </p>
+                            </div>
+                          </div>
+                          <div className="col-lg-5">
                             <div className="services__details-list-box">
                               <div className="icon">
                                 <i className="flaticon-life-insurance" />
                               </div>
                               <div className="content">
-                                <h4 className="title">Tax Strategy</h4>
+                                <h4 className="title">Business Solutions</h4>
                                 <p>
-                                  We successfully copey withtks arying mplexity
-                                  aweprguara nd regularly master
+                                  successfully copey withtks arying mplexity
                                 </p>
                               </div>
                             </div>
-                          </div>
-                          <div className="col-md-6">
                             <div className="services__details-list-box">
                               <div className="icon">
                                 <i className="flaticon-insurance-agent" />
                               </div>
                               <div className="content">
-                                <h4 className="title">Long Term Goals</h4>
+                                <h4 className="title">Modern Insurance</h4>
                                 <p>
-                                  We successfully copey withtks arying mplexity
-                                  aweprguara nd regularly masters
+                                  successfully copey withtks arying mplexity
                                 </p>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <p>
-                        We offer expert tax planning and preparation services to
-                        help you navigate complex tax regulations and maximize
-                        your financial benefits. Our experienced team provides
-                        personalized strategies to minimize your tax liability
-                        and ensure compliance with the latest laws. Whether for
-                        individuals or businesses, we take the stress out of tax
-                        season and help you plan for a more secure financial
-                        future.
-                      </p>
-                      <div className="services__details-inner">
+                      <div className="services__details-inner-two services__details-inner-four">
                         <div className="row gutter-24 align-items-center">
-                          <div className="col-44">
+                          <div className="col-48">
                             <div className="services__details-inner-img">
                               <img
-                                src="/assets/img/services/services_details_inner01.jpg"
+                                src="/assets/img/services/services_details_inner04.jpg"
                                 alt=""
                               />
-                              <VideoPopup />
                             </div>
                           </div>
-                          <div className="col-56">
-                            <div className="services__details-inner-content">
-                              <h4 className="title">
-                                Raise capital faster negotiate <br /> on your
-                                own terms
-                              </h4>
+                          <div className="col-52">
+                            <div className="services__details-inner-content-two">
+                              <h4 className="title">Financial Planning</h4>
                               <p>
-                                We offer expert tax planning and preparation
-                                services to help you navigate complex tax
-                                regulations and maximize your financial
-                                benefits. Our experienced team provides
-                                personalized strategies to minimize your tax
-                                liability and ensure compliance with the latest
-                                laws. Whether for individuals or businesses, we
-                                take the stress out of tax season and help you
-                                plan for a more secure financial future.
+                                when an unknown printer took a galley of type
+                                and scrambled it to make a type specimen bookhas
+                                survived not only five centuries.but also the
+                                leap into electronic typesetting, remaining.
                               </p>
-                              <div className="about__list-box">
+                              <div className="about__list-box about__list-box-three">
                                 <ul className="list-wrap">
                                   <li>
                                     <i className="flaticon-arrow-button" />
@@ -123,7 +104,11 @@ export default function ServicesDetails() {
                                   </li>
                                   <li>
                                     <i className="flaticon-arrow-button" />
-                                    Analysis Research
+                                    100% Secure
+                                  </li>
+                                  <li>
+                                    <i className="flaticon-arrow-button" />
+                                    Research
                                   </li>
                                   <li>
                                     <i className="flaticon-arrow-button" />
@@ -141,7 +126,11 @@ export default function ServicesDetails() {
                         not only five centuries, but also the leap into
                         electronic typesetting, remaining essentially unchan
                         galley of type and scrambled it to make a type specimen
-                        book.
+                        book.when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen bookhas survived
+                        not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchan
+                        galle.
                       </p>
                     </div>
                   </div>
@@ -154,37 +143,37 @@ export default function ServicesDetails() {
                           </h4>
                           <ul className="list-wrap">
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/accounting-advisory">
                                 Accounting Advisory{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/business-entity-structuring">
                                 Business Entity Structuring{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/financial-planning">
                                 Financial Planning{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/management-consulting">
                                 Management Consulting{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/financial-statement-analysis">
                                 Financial Statement Analysis{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>
                             </li>
                             <li>
-                              <Link href="/services-details">
+                              <Link href="/services/tax-planning">
                                 Tax Planning & Preparation{' '}
                                 <i className="flaticon-arrow-button" />
                               </Link>

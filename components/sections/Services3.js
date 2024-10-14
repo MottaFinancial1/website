@@ -5,15 +5,8 @@ export default function Services3() {
     <>
       <section className="services__area-three services__bg-three">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-6">
-              <div className="section-title white-title text-center mb-50 tg-heading-subheading animation-style3">
-                <h2 className="title tg-element-title">Our Services</h2>
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center gutter-24">
-            <div className="col-lg-4 col-md-6">
+          <div className="row justify-content-center cards-container">
+            <div className="col card-wrapper">
               <div className="services__item-three">
                 <div className="services__item-top">
                   <div className="services__icon-three">
@@ -21,7 +14,9 @@ export default function Services3() {
                   </div>
                   <div className="services__item-top-title">
                     <h2 className="title">
-                      <Link href="/">Tax Planning & Preparation</Link>
+                      <Link href="/services/tax-planning">
+                        Tax Planning & Preparation
+                      </Link>
                     </h2>
                   </div>
                 </div>
@@ -35,21 +30,21 @@ export default function Services3() {
                     individuals or businesses, we take the stress out of tax
                     season and help you plan for a more secure financial future.
                   </p>
-                  <Link href="/" className="btn btn-two">
+                  <Link href="/services/tax-planning" className="btn btn-two">
                     Read More
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col card-wrapper">
               <div className="services__item-three">
                 <div className="services__item-top">
                   <div className="services__icon-three">
                     <i className="flaticon-target" />
                   </div>
-                  <div className="services__top-title">
+                  <div className="services__item-top-title">
                     <h2 className="title">
-                      <Link href="/services-details">
+                      <Link href="/services/accounting-advisory">
                         Accounting Advisory & Payroll Services
                       </Link>
                     </h2>
@@ -63,24 +58,27 @@ export default function Services3() {
                     enhance your financial health. With a commitment to
                     accuracy, transparency, and personalized service, we ensure
                     that your business stays compliant and financially sound.
-                    Let us handle the numbers so you can focus on growing your
-                    business.
                   </p>
-                  <Link href="/" className="btn btn-two">
+                  <Link
+                    href="/services/accounting-advisory"
+                    className="btn btn-two"
+                  >
                     Read More
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col card-wrapper">
               <div className="services__item-three">
                 <div className="services__item-top">
                   <div className="services__icon-three">
                     <i className="flaticon-financial-profit" />
                   </div>
-                  <div className="services__top-title">
+                  <div className="services__item-top-title">
                     <h2 className="title">
-                      <Link href="/">Business Entity Structuring</Link>
+                      <Link href="/services/business-entity-structuring">
+                        Business Entity Structuring
+                      </Link>
                     </h2>
                   </div>
                 </div>
@@ -94,21 +92,26 @@ export default function Services3() {
                     ensures your legal entity structure is both effective and
                     efficient, tailored to support your business needs.
                   </p>
-                  <Link href="/" className="btn btn-two">
+                  <Link
+                    href="/services/business-entity-structuring"
+                    className="btn btn-two"
+                  >
                     Read More
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col card-wrapper">
               <div className="services__item-three">
                 <div className="services__item-top">
                   <div className="services__icon-three">
                     <i className="flaticon-piggy-bank" />
                   </div>
-                  <div className="services__top-title">
+                  <div className="services__item-top-title">
                     <h2 className="title">
-                      <Link href="/">Financial Planning & Advisory</Link>
+                      <Link href="/services/financial-planning">
+                        Financial Planning & Advisory
+                      </Link>
                     </h2>
                   </div>
                 </div>
@@ -122,21 +125,26 @@ export default function Services3() {
                     way. We offer personalized strategies to help you achieve
                     financial security and peace of mind for the future.
                   </p>
-                  <Link href="/" className="btn btn-two">
+                  <Link
+                    href="/services/financial-planning"
+                    className="btn btn-two"
+                  >
                     Read More
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col card-wrapper">
               <div className="services__item-three">
                 <div className="services__item-top">
                   <div className="services__icon-three">
                     <i className="flaticon-investment-1" />
                   </div>
-                  <div className="services__top-title">
+                  <div className="services__item-top-title">
                     <h2 className="title">
-                      <Link href="/">Management Consulting</Link>
+                      <Link href="/services/management-consulting">
+                        Management Consulting
+                      </Link>
                     </h2>
                   </div>
                 </div>
@@ -151,21 +159,24 @@ export default function Services3() {
                     improvement, we help you navigate change and achieve
                     sustainable success.
                   </p>
-                  <Link href="/" className="btn btn-two">
+                  <Link
+                    href="/services/management-consulting"
+                    className="btn btn-two"
+                  >
                     Read More
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col card-wrapper">
               <div className="services__item-three">
                 <div className="services__item-top">
                   <div className="services__icon-three">
                     <i className="flaticon-startup" />
                   </div>
-                  <div className="services__top-title">
+                  <div className="services__item-top-title">
                     <h2 className="title">
-                      <Link href="/">
+                      <Link href="/services/financial-statement-analysis">
                         Financial Statement Preparation & Analysis
                       </Link>
                     </h2>
@@ -182,7 +193,10 @@ export default function Services3() {
                     decision-making, enhance transparency, and support your
                     business growth.
                   </p>
-                  <Link href="/" className="btn btn-two">
+                  <Link
+                    href="/services/financial-statement-analysis"
+                    className="btn btn-two"
+                  >
                     Read More
                   </Link>
                 </div>
