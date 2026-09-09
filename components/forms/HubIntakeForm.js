@@ -11,6 +11,43 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { postToHub, hubErrorMessage, HUB_BASE_URL } from '@/lib/hub';
+import { getTeamPhoto } from '@/lib/teamPhotos';
+
+// Calendly's widget.js is ~100KB and the booking screen only appears
+// after the prospect finishes the whole form and submits, so there's
+// no reason to wait until then to start fetching it. This module-level
+// promise is created once and shared by every CalendlyInline instance,
+// so we can kick it off the moment the form mounts (see the effect in
+// HubIntakeForm below) and it's warm — often already resolved — by the
+// time the success screen renders and actually needs it.
+let calendlyScriptPromise = null;
+function ensureCalendlyScript() {
+  if (typeof window === 'undefined') {
+    return Promise.reject(new Error('Calendly widget requires a browser'));
+  }
+  if (window.Calendly) return Promise.resolve();
+  if (calendlyScriptPromise) return calendlyScriptPromise;
+
+  const SRC = 'https://assets.calendly.com/assets/external/widget.js';
+  const existing = document.querySelector(`script[src="${SRC}"]`);
+  calendlyScriptPromise = existing
+    ? new Promise((resolve) => {
+        existing.addEventListener('load', () => resolve(), { once: true });
+      })
+    : new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = SRC;
+        script.async = true;
+        script.onload = () => resolve();
+        script.onerror = () => {
+          // Let a future call retry instead of caching a broken load.
+          calendlyScriptPromise = null;
+          reject(new Error('Calendly widget failed to load'));
+        };
+        document.body.appendChild(script);
+      });
+  return calendlyScriptPromise;
+}
 
 const honeypotStyle = {
   position: 'absolute',
@@ -32,6 +69,7 @@ const PERSONAL_SERVICES = [
   'Tax Planning & Advisory',
   'IRS Support & Resolution',
   'Financial Planning & Wealth Management',
+  'Stock Options & Equity Compensation',
 ];
 
 const BUSINESS_SERVICES = [
@@ -208,28 +246,9 @@ function CalendlyInline({ url, name, onScheduled }) {
 
   useEffect(() => {
     if (!url || typeof window === 'undefined') return undefined;
-    const SRC = 'https://assets.calendly.com/assets/external/widget.js';
-
-    function ensureScript() {
-      if (window.Calendly) return Promise.resolve();
-      const existing = document.querySelector(`script[src="${SRC}"]`);
-      if (existing) {
-        return new Promise((resolve) => {
-          existing.addEventListener('load', () => resolve(), { once: true });
-        });
-      }
-      return new Promise((resolve, reject) => {
-        const script = document.createElement('script');
-        script.src = SRC;
-        script.async = true;
-        script.onload = () => resolve();
-        script.onerror = () => reject(new Error('Calendly widget failed to load'));
-        document.body.appendChild(script);
-      });
-    }
 
     let cancelled = false;
-    ensureScript()
+    ensureCalendlyScript()
       .then(() => {
         if (cancelled || !containerRef.current || !window.Calendly) return;
         // Clear any prior render then mount a fresh widget.
@@ -341,6 +360,17 @@ export default function HubIntakeForm() {
   // flips to true we swap the booking screen for a confirmation
   // panel from ALFRED Ai.
   const [bookingConfirmed, setBookingConfirmed] = useState(false);
+
+  // Kick off the Calendly widget.js fetch as soon as the form opens
+  // rather than waiting for the success screen. Every prospect who
+  // completes this form ends up on the booking step, so there's no
+  // downside to warming it early — by the time they submit, the
+  // script is typically already cached and ready to initialize.
+  useEffect(() => {
+    ensureCalendlyScript().catch(() => {
+      /* swallow — CalendlyInline retries and falls back to a manual link */
+    });
+  }, []);
 
   const wantsBusiness =
     serviceFocus === 'Business Only' ||
@@ -573,7 +603,12 @@ export default function HubIntakeForm() {
                   key={host.name}
                   label={host.name}
                   sub={host.title || host.role || null}
-                  avatarUrl={host.avatarUrl}
+                  // Prefer the team-page headshot when we have one for
+                  // this host, since it's the canonical photo used across
+                  // /team and /about/team. Only fall back to whatever the
+                  // Hub sends (or nothing, for initials) when we don't
+                  // have a match, e.g. Micaela Palacios.
+                  avatarUrl={getTeamPhoto(host.name) || host.avatarUrl}
                   selected={selectedHost?.name === host.name}
                   onSelect={() => setSelectedHost(host)}
                 />

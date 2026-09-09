@@ -6,6 +6,16 @@ import { HUB_BASE_URL, HUB_TRUSTED_ORIGIN } from '@/lib/hub';
 // request to the Hub server-side. This avoids the cross-origin CORS
 // restriction that blocks direct browser -> hub.motta.cpa calls from
 // origins outside the Hub's allowlist (e.g. preview sandboxes).
+//
+// Edge runtime: this handler does nothing Node-specific (just fetch +
+// JSON), and Edge functions start near-instantly with no cold-start
+// tax. Measured against hub.motta.cpa directly, the Hub itself takes
+// ~1.2-1.7s to respond (it creates the intake record and pushes to
+// Karbon/Salesforce before replying) — that part can't be sped up from
+// here, but every millisecond this proxy hop adds on top of that is
+// pure overhead we can remove.
+export const runtime = 'edge';
+
 export async function POST(request) {
   let payload;
   try {
