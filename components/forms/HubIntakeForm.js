@@ -11,6 +11,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { postToHub, hubErrorMessage, HUB_BASE_URL } from '@/lib/hub';
+import { getTeamPhoto } from '@/lib/teamPhotos';
 
 // Calendly's widget.js is ~100KB and the booking screen only appears
 // after the prospect finishes the whole form and submits, so there's
@@ -601,7 +602,10 @@ export default function HubIntakeForm() {
                   key={host.name}
                   label={host.name}
                   sub={host.title || host.role || null}
-                  avatarUrl={host.avatarUrl}
+                  // The Hub doesn't always send an avatar for a host, so
+                  // fall back to the same headshot used on /team and
+                  // /about/team, matched by name.
+                  avatarUrl={host.avatarUrl || getTeamPhoto(host.name)}
                   selected={selectedHost?.name === host.name}
                   onSelect={() => setSelectedHost(host)}
                 />
