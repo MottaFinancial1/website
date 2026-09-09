@@ -20,6 +20,7 @@ const teamMembers = [
     blurb:
       "Dat is the founder and Managing Partner of Motta Financial, leading the firm's strategic direction across tax, accounting, and advisory services from offices in Boston and Las Vegas. A two-time Suffolk University graduate, Dat built his foundation as a top-rated Audit Senior at Deloitte & Touche before deepening his technical skills through senior consulting and controller roles supporting IPOs, SPAC transactions, and complex revenue recognition.",
     email: 'Dat.Le@MottaFinancial.com',
+    linkedin: 'https://www.linkedin.com/in/dat-le-cpa-589b451b/',
     calendly: 'https://calendly.com/dat-le-motta',
     detailHref: '/team/dat-le',
   },
@@ -90,6 +91,7 @@ const teamMembers = [
     blurb:
       "Justin is a senior-level accounting and finance consultant with a track record across financial services, healthcare, manufacturing, and public accounting. He brings hands-on expertise in month-end close, financial statement preparation, cash flow forecasting, budgeting, and ERP implementation, and a proven ability to step into complex environments and add immediate value. A CPA and University of Minnesota Duluth graduate, Justin also leads process improvement initiatives and has supported companies preparing for public offerings.",
     email: 'Justin.Bestel@MottaFinancial.com',
+    linkedin: 'https://www.linkedin.com/in/justin-bestel-33652013/',
   },
   {
     slug: 'andrew-gianares',
@@ -106,16 +108,33 @@ const teamMembers = [
     calendly: 'https://calendly.com/andrew-gianares-mottafinancial',
   },
   {
+    slug: 'shinika-shelley',
+    name: 'Shinika Shelley',
+    title: 'Senior Accounting Consultant',
+    department: 'Accounting Advisory',
+    credentials: 'Controller-Level · Fractional CFO · Multi-Client · 19 Years Experience',
+    image:
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7CB62C0D-75E8-4D6A-B324-3EB9D7590D6C%20%281%29-AwUjJh6BnFVF5y4tdVS5bUiQ34gLng.png',
+    blurb:
+      "Shinika is a senior accounting professional with nineteen years of experience delivering full-cycle accounting, financial reporting, and advisory services across healthcare, SaaS, B2B, entertainment, and real estate. She has served in Controller and Fractional CFO capacities — leading month-end close, cash flow strategy, multi-entity reporting, and client advisory for businesses ranging from dental investment portfolios to entertainment industry clients.",
+    email: 'Shinika.Shelley@MottaFinancial.com',
+    linkedin: 'https://www.linkedin.com/in/shinika-shelley-367385116/',
+    calendly: 'https://calendly.com/shinika-shelley-mottafinancial',
+  },
+  {
     slug: 'samprina-zekio',
     name: 'Samprina Zekio',
-    title: 'Team Member',
+    title: 'Backend Development Lead, Intern',
     department: 'Client Operations',
-    credentials: 'Full profile coming soon',
+    credentials: 'Suffolk University · Boston · 4 Languages',
     image:
       'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Samprina%20Zekio-GTqi19ZdKp1732WGzF5s5YFygrWUz9.jpg',
     blurb:
-      "A fuller profile is on the way. In the meantime, connect with Samprina directly using the links below.",
+      "Samprina leads backend development for ALFRED Ai through the Suffolk University SEED Program, reporting to Dat Le, CPA. She designs the infrastructure, API workflows, and automation behind ALFRED Ai, the Supabase-powered Motta Hub, and Project Alpha — Motta's ProConnect integration.",
     email: 'Samprina.Zekio@MottaFinancial.com',
+    linkedin: 'https://www.linkedin.com/in/samprina-zekio/',
+    github: 'https://github.com/samprinazekio',
+    calendly: 'https://calendly.com/samprinazekio',
   },
 ];
 
