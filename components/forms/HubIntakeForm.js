@@ -69,6 +69,7 @@ const PERSONAL_SERVICES = [
   'Tax Planning & Advisory',
   'IRS Support & Resolution',
   'Financial Planning & Wealth Management',
+  'Stock Options & Equity Compensation',
 ];
 
 const BUSINESS_SERVICES = [
