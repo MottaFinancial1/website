@@ -602,10 +602,12 @@ export default function HubIntakeForm() {
                   key={host.name}
                   label={host.name}
                   sub={host.title || host.role || null}
-                  // The Hub doesn't always send an avatar for a host, so
-                  // fall back to the same headshot used on /team and
-                  // /about/team, matched by name.
-                  avatarUrl={host.avatarUrl || getTeamPhoto(host.name)}
+                  // Prefer the team-page headshot when we have one for
+                  // this host, since it's the canonical photo used across
+                  // /team and /about/team. Only fall back to whatever the
+                  // Hub sends (or nothing, for initials) when we don't
+                  // have a match, e.g. Micaela Palacios.
+                  avatarUrl={getTeamPhoto(host.name) || host.avatarUrl}
                   selected={selectedHost?.name === host.name}
                   onSelect={() => setSelectedHost(host)}
                 />
